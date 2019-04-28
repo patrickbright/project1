@@ -19,7 +19,7 @@ int main() {
     //getchar();
     //read input to message array
     fgets(code, 1024, stdin);
-    printf("Enter key (between 1 and 26): ");
+    printf("Enter a key: ");
     //read input to key int
     scanf("%d", &key);
     
@@ -52,11 +52,13 @@ int main() {
         //encrypt substitution cipher
         case 3:
 
+            //substitutionEncryption(code, key);
             break;
             
         //decrypt substitution cipher
         case 4:
 
+            //substitutionDecryption(code, key);
             break;
             
         //decrypt rotation cipher without key (attack)
@@ -68,6 +70,7 @@ int main() {
         //decrypt subtitution cipher without key (attack)
         case 6:
 
+            //substitutionAttack(code);
             break;
             
         //invalid input
@@ -138,11 +141,13 @@ void rotationDecryption(char* code, int key){
 //function to encrypt a message with a substitution cipher
 void substitutionEncryption(char* code, int key) {
     
+    //todo
 }
 
 //function to decrypt a message with a substitution cipher
 void substitutionDecryption(char* code, int key) {
     
+    //todo
 }
 
 //function to decrypt a message with a rotation cipher WITHOUT a key
@@ -181,4 +186,5 @@ void rotationAttack(char* code) {
 //function to decrypt a message with a substitution cipher WITHOUT a key
 void substitutionAttack(char* code) {
     
+    //todo
 }
